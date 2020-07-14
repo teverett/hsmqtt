@@ -72,7 +72,7 @@ public class MQTTSender implements DataPointCallback {
 		 */
 		lastUpdateTime = new Date().getTime();
 		/*
-		 * send to MQQT
+		 * send to MQTT
 		 */
 		mqttSend();
 	}
@@ -100,7 +100,7 @@ public class MQTTSender implements DataPointCallback {
 				mqttClient.publish(configuration.getMqttConfiguration().getMqtttopic(), createMessage(dataPoint));
 			}
 		} catch (final Exception e) {
-			logger.error("Error writing device data to MQQT", e);
+			logger.error("Error writing device data to MQTT", e);
 		} finally {
 			try {
 				mqttClient.close();

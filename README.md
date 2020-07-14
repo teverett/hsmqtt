@@ -3,9 +3,7 @@
 
 # HomeSeer hsMQTT
 
-
-
-A Java [MQTT](https://en.wikipedia.org/wiki/MQTT) bridge for HomeSeer.  msMQTT polls the HomeSeer API on a schedule and publishes device change messages to an MQQT Broker.  Messages are published in JSON format.
+A Java [MQTT](https://en.wikipedia.org/wiki/MQTT) bridge for HomeSeer.  msMQTT polls the HomeSeer API on a schedule and publishes device change messages to an MQTT Broker.  Messages are published in JSON format.
 
 msMQTT uses [hsClient](https://github.com/teverett/hsclient)
 
@@ -23,7 +21,7 @@ hsurl=http://192.168.75.129/JSON
 hsuser=HOMESEERUSERNAME
 hspassword=HOMESEERPASSWORD
 
-# MQQT
+# MQTT
 mqtturl=tcp://192.168.75.71:1883
 mqtttopic=devices
 mqttpublisherid=hsMQTT

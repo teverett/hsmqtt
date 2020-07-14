@@ -8,14 +8,14 @@ package com.khubla.hsmqtt;
  */
 public class Main {
 	public static void main(String... args) {
-		System.out.println("HomeSeer MQQT Client");
+		System.out.println("HomeSeer MQTT Client");
 		try {
 			/*
 			 * go
 			 */
 			final Configuration configuration = Configuration.getInstance();
-			final MQTTSender importer = new MQTTSender(configuration);
-			importer.run();
+			final MQTTSender mqttSender = new MQTTSender(configuration);
+			mqttSender.run();
 		} catch (final Exception e) {
 			e.printStackTrace();
 		}

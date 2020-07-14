@@ -3,10 +3,10 @@ hsurl=http://192.168.75.129/JSON
 hsuser=HOMESEERUSERNAME
 hspassword=HOMESEERPASSWORD
 
-# MQQT
+# MQTT
 mqtturl=tcp://192.168.75.71:1883
 mqtttopic=devices
-mqttpublisherid=hsMQQT
+mqttpublisherid=hsMQTT
 
 # Number of threads to poll HomeSeer on
 pollingthreads=5
