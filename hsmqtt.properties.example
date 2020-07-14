@@ -1,0 +1,15 @@
+# HomeSeer
+hsurl=http://192.168.75.129/JSON
+hsuser=HOMESEERUSERNAME
+hspassword=HOMESEERPASSWORD
+
+# MQQT
+mqqturl=tcp://192.168.75.71:1883
+mqqttopic=devices
+mqqtpublisherid=hsMQQT
+
+# Number of threads to poll HomeSeer on
+pollingthreads=5
+
+# minutes
+pollinginterval=1
