@@ -23,7 +23,7 @@ public class Configuration {
 	}
 
 	private HSConfiguration hsConfiguration;
-	private MQTTConfiguration mqqtConfiguration;
+	private MQTTConfiguration mqttConfiguration;
 	private int pollingthreads;
 	private int pollinginterval;
 
@@ -33,10 +33,6 @@ public class Configuration {
 
 	public HSConfiguration getHsConfiguration() {
 		return hsConfiguration;
-	}
-
-	public MQTTConfiguration getMqqtConfiguration() {
-		return mqqtConfiguration;
 	}
 
 	public int getPollinginterval() {
@@ -52,11 +48,15 @@ public class Configuration {
 			final Properties properties = new Properties();
 			properties.load(new FileInputStream(FILENAME));
 			hsConfiguration = new HSConfiguration(properties.getProperty("hsurl"), properties.getProperty("hsuser"), properties.getProperty("hspassword"));
-			mqqtConfiguration = new MQTTConfiguration(properties.getProperty("mqqturl"), properties.getProperty("mqqttopic"), properties.getProperty("mqqtpublisherid"));
+			mqttConfiguration = new MQTTConfiguration(properties.getProperty("mqtturl"), properties.getProperty("mqtttopic"), properties.getProperty("mqttpublisherid"));
 			pollingthreads = Integer.parseInt(properties.getProperty("pollingthreads"));
 			pollinginterval = Integer.parseInt(properties.getProperty("pollinginterval"));
 		} catch (final Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public MQTTConfiguration getMqttConfiguration() {
+		return mqttConfiguration;
 	}
 }

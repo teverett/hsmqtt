@@ -74,19 +74,19 @@ public class MQTTSender implements DataPointCallback {
 		/*
 		 * send to MQQT
 		 */
-		mqqtSend();
+		mqttSend();
 	}
 
 	/**
-	 * send message to mqqt
+	 * send message to mqtt
 	 */
-	private void mqqtSend() {
+	private void mqttSend() {
 		IMqttClient mqttClient = null;
 		try {
 			/*
 			 * connect
 			 */
-			mqttClient = new MqttClient(configuration.getMqqtConfiguration().getMqtturl(), configuration.getMqqtConfiguration().getMqttpublisherid());
+			mqttClient = new MqttClient(configuration.getMqttConfiguration().getMqtturl(), configuration.getMqttConfiguration().getMqttpublisherid());
 			final MqttConnectOptions options = new MqttConnectOptions();
 			options.setAutomaticReconnect(true);
 			options.setCleanSession(true);
@@ -97,7 +97,7 @@ public class MQTTSender implements DataPointCallback {
 				/*
 				 * send
 				 */
-				mqttClient.publish(configuration.getMqqtConfiguration().getMqtttopic(), createMessage(dataPoint));
+				mqttClient.publish(configuration.getMqttConfiguration().getMqtttopic(), createMessage(dataPoint));
 			}
 		} catch (final Exception e) {
 			logger.error("Error writing device data to MQQT", e);

@@ -24,9 +24,9 @@ hsuser=HOMESEERUSERNAME
 hspassword=HOMESEERPASSWORD
 
 # MQQT
-mqqturl=tcp://192.168.75.71:1883
-mqqttopic=devices
-mqqtpublisherid=hsMQTT
+mqtturl=tcp://192.168.75.71:1883
+mqtttopic=devices
+mqttpublisherid=hsMQTT
 
 # Number of threads to poll HomeSeer on
 pollingthreads=5
