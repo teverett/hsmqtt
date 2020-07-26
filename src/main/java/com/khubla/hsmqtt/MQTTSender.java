@@ -34,10 +34,6 @@ public class MQTTSender implements DataPointCallback {
 	 * points queue
 	 */
 	private Queue<DataPoint> points;
-	/**
-	 * last update time
-	 */
-	private long lastUpdateTime = 0;
 
 	public MQTTSender(Configuration configuration) {
 		super();
@@ -67,10 +63,6 @@ public class MQTTSender implements DataPointCallback {
 
 	@Override
 	public void endUpdate(long timems) {
-		/*
-		 * record last update time
-		 */
-		lastUpdateTime = new Date().getTime();
 		/*
 		 * send to MQTT
 		 */
@@ -116,11 +108,6 @@ public class MQTTSender implements DataPointCallback {
 
 	@Override
 	public void update(DataPoint dataPoint) {
-		/*
-		 * add the point of it's changed since last update
-		 */
-		if (dataPoint.getLastChange() > lastUpdateTime) {
-			points.add(dataPoint);
-		}
+		points.add(dataPoint);
 	}
 }

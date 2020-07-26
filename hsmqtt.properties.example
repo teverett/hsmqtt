@@ -11,5 +11,6 @@ mqttpublisherid=hsMQTT
 # Number of threads to poll HomeSeer on
 pollingthreads=5
 
-# minutes
-pollinginterval=1
+
+# milliseconds
+pollinginterval=500
