@@ -168,7 +168,6 @@
 							</execution>
 						</executions>
 						<configuration>
-							<javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
 							<source>8</source>
 						</configuration>
 					</plugin>
