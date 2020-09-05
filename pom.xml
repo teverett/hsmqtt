@@ -4,13 +4,13 @@
 	<artifactId>hsmqtt</artifactId>
 	<packaging>jar</packaging>
 	<name>khubla.com HomeSeer HSMQTT</name>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2</version>
 	<description>An MQTT client for HomeSeer</description>
 	<properties>
 		<target.jvm>1.8</target.jvm>
 		<required-maven-version>3.3.1</required-maven-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<hsclient.version>1.14</hsclient.version>
+		<hsclient.version>1.15</hsclient.version>
 		<dependency-check-maven.version>5.3.2</dependency-check-maven.version>
 		<commons-cli.version>1.4</commons-cli.version>
 		<junit.version>4.13</junit.version>
