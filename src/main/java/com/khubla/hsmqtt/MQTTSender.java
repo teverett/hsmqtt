@@ -38,7 +38,7 @@ public class MQTTSender implements DataPointCallback {
 	public MQTTSender(Configuration configuration) {
 		super();
 		this.configuration = configuration;
-		poller = new Poller(configuration.getHsConfiguration(), this.configuration.getPollinginterval(), this, this.configuration.getPollingthreads());
+		poller = new Poller(configuration.getHsConfiguration(), this.configuration.getPollinginterval(), this, this.configuration.getPollingthreads(), true);
 	}
 
 	@Override
