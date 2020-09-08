@@ -11,7 +11,7 @@
 		<required-maven-version>3.3.1</required-maven-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<hsclient.version>1.15</hsclient.version>
-		<dependency-check-maven.version>5.3.2</dependency-check-maven.version>
+		<dependency-check-maven.version>6.0.0</dependency-check-maven.version>
 		<commons-cli.version>1.4</commons-cli.version>
 		<junit.version>4.13</junit.version>
 		<paho.version>1.2.5</paho.version>
