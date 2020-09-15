@@ -5,6 +5,13 @@
 
 A Java [MQTT](https://en.wikipedia.org/wiki/MQTT) bridge for HomeSeer.  msMQTT polls the HomeSeer API on a schedule and publishes device change messages to an MQTT Broker.  Messages are published in JSON format.
 
+hsOpenAPI is one of numerous HomeSeer support applications created by khubla.com, including
+
+* [hsClient](https://github.com/teverett/hsclient)
+* [hsInflux](https://github.com/teverett/hsinflux)
+* [hsMQTT](https://github.com/teverett/hsOpenAPI)
+* [hsOpenAPI](https://github.com/teverett/hsOpenAPI)
+
 msMQTT uses [hsClient](https://github.com/teverett/hsclient)
 
 ## License
