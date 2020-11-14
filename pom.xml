@@ -7,7 +7,7 @@
 	<version>1.0.3-SNAPSHOT</version>
 	<description>An MQTT client for HomeSeer</description>
 	<properties>
-		<target.jvm>1.8</target.jvm>
+		<target.jvm>11</target.jvm>
 		<required-maven-version>3.3.1</required-maven-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<hsclient.version>1.17</hsclient.version>
