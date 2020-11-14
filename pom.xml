@@ -10,9 +10,9 @@
 		<target.jvm>1.8</target.jvm>
 		<required-maven-version>3.3.1</required-maven-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<hsclient.version>1.16</hsclient.version>
+		<hsclient.version>1.17</hsclient.version>
 		<commons-cli.version>1.4</commons-cli.version>
-		<junit.version>4.13.1</junit.version>
+		<junit.version>5.4.0</junit.version>
 		<paho.version>1.2.5</paho.version>
 	</properties>
 	<developers>
@@ -41,8 +41,8 @@
 	</organization>
 	<dependencies>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
